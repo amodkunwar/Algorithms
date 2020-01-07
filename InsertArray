@@ -1,0 +1,36 @@
+public class InsertArrayFromUser {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("How many values you want to add ?");
+		int num = scan.nextInt();
+		int[] ar = new int[num];
+		System.out.println("Enter " + num + " value.");
+		for (int i = 0; i < ar.length; i++) {
+			ar[i] = scan.nextInt();
+		}
+
+		System.out.println("Entered array");
+		for (int i = 0; i < ar.length; i++) {
+			System.out.println(i + "-->" + ar[i]);
+		}
+		scan.close();
+	}
+}
+***************************************************************************************************************************************
+output :-
+
+How many values you want to add ?
+5
+Enter 5 value.
+1
+2
+3
+4
+5
+Entered array
+0-->1
+1-->2
+2-->3
+3-->4
+4-->5
