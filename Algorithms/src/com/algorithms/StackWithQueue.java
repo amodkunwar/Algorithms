@@ -5,10 +5,12 @@ import java.util.Queue;
 
 /***
  * 
+ * Implement stack using two queues
+ * 
  * @author Amod Kunwar
  *
  */
-public class Stack {
+public class StackWithQueue {
 
 	Queue<Integer> queue1 = new LinkedList<>();
 	Queue<Integer> queue2 = new LinkedList<>();
@@ -48,7 +50,7 @@ public class Stack {
 
 	public static void main(String[] args) {
 		
-		Stack stack = new Stack();
+		StackWithQueue stack = new StackWithQueue();
 		stack.push(5);
 		stack.push(10);
 		stack.push(15);
